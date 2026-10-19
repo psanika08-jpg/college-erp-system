@@ -1,0 +1,31 @@
+
+name: College ERP CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          test -f index.html
+          test -f style.css
+          test -f script.js
+          echo "All required files are present."
+
+      - name: Package website
+        run: |
+          mkdir -p package
+          cp index.html style.css script.js package/
+          echo "College ERP website packaged successfully."

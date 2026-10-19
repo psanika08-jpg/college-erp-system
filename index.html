@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College ERP System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>College ERP System</h1>
+        <p>Student Academic Dashboard</p>
+    </header>
+
+    <nav>
+        <a href="#login">Login</a>
+        <a href="#attendance">Attendance</a>
+        <a href="#results">Results</a>
+        <a href="#fees">Fees</a>
+        <a href="#timetable">Timetable</a>
+    </nav>
+
+    <main>
+        <section id="login">
+            <h2>Student Login</h2>
+            <input id="username" placeholder="Student ID">
+            <input id="password" type="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p id="message"></p>
+        </section>
+
+        <section id="attendance">
+            <h2>Attendance Record</h2>
+            <p>Present: 42 days</p>
+            <p>Absent: 8 days</p>
+            <p>Attendance: 84%</p>
+        </section>
+
+        <section id="results">
+            <h2>Examination Results</h2>
+            <p>Semester IV — Sample Result</p>
+            <p>Database Management: 85/100</p>
+            <p>Operating Systems: 82/100</p>
+        </section>
+
+        <section id="fees">
+            <h2>Fee Payment Details</h2>
+            <p>Total Fees: ₹50,000</p>
+            <p>Paid: ₹35,000</p>
+            <p>Balance: ₹15,000</p>
+        </section>
+
+        <section id="timetable">
+            <h2>Class Timetable</h2>
+            <p>Monday — Database Management</p>
+            <p>Tuesday — Operating Systems</p>
+            <p>Wednesday — Computer Networks</p>
+        </section>
+    </main>
+
+    <footer>College ERP System | Agile Assignment 1</footer>
+    <script src="script.js"></script>
+</body>
+</html>

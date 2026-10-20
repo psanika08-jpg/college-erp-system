@@ -1,0 +1,24 @@
+artifact_path: file:C:/Users/Sanika/college-erp-system/ml-lifecycle/mlruns/1/models/m-df1c7cf2d25f43a9a725ddc4b2599079/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.10
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - sklearn.tree._tree.Tree
+mlflow_version: 3.17.1
+model_id: m-df1c7cf2d25f43a9a725ddc4b2599079
+model_size_bytes: 1845596
+model_uuid: m-df1c7cf2d25f43a9a725ddc4b2599079
+prompts: null
+run_id: 553c9b7d00f84ef786bf3f0530f1f61d
+utc_time_created: '2026-10-20 11:30:22.564286'
